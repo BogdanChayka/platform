@@ -124,6 +124,16 @@ Access the application container:
 > ./psh.phar docker:ssh
 ```
 
+Before you run install, check the following steps:
+1. Make sure all required PHP Extentions are installed
+2. Make sure to adjust .psh.yaml.dist according to your database.
+3. Nodejs must be installed before you run the installer and at the moment the latest npm Version 6.* is not compatibe, 
+downgrade to LTS nodejs 10 and npm 5
+
+```bash
+> ./psh.phar install 
+```
+
 Execute the installer:
 
 ```bash
